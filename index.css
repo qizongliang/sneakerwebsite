@@ -16,7 +16,16 @@ html, body{
   0%{transform:translateY(800px);}
   100%{transform:translateY(0px);}
 }
-
+.cart{
+  background-color:white;
+  position:fixed;
+  border-radius: 100px;
+  right:1%;
+  color:white;
+}
+.items{
+  color: blue;
+}
 body{
   margin:0;
   background: #222;
