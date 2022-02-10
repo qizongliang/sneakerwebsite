@@ -79,8 +79,8 @@ nav{
   animation: slideshow1 10s infinite alternate;
 }
 .ss1{
-  padding-top:5px;
-  padding-bottom:5px;
+  padding-top:10px;
+  padding-bottom:10px;
   width:33.33333%;
   display: inline-block;
   text-align: center;
@@ -111,13 +111,14 @@ nav{
 
 
 .poster{
-  height:1000px;
+  height:50%;
   width:70%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   overflow: hidden;
 }
+
 .poster img{
   object-fit: cover;
   width: 100%;
@@ -127,7 +128,7 @@ nav{
 .poster p{
   animation: move 5s forwards;
   padding:10px;
-  top: 90px;
+  top: 5%;
   width: 40%;
   left: 58%;
   text-align: center;
@@ -141,25 +142,27 @@ nav{
 }
 .about{
   margin-top: 2%;
-  height:1000px;
+  height:50%;
   width:70%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  background-image:
-  linear-gradient(to bottom, rgba(177, 203, 212, 0.73),rgba(57, 156, 184, 0.52)),
-  url('images/about.png');
-  width: 80%;
+}
+.about img{
+  opacity: 40%;
   background-size: cover;
-  padding: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 .about p{
   padding:10px;
-  bottom: 90px;
+  bottom:1%;
   width: 40%;
   right: 58%;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
   color: lightgray;
   background-color: rgba(0,0,0,0.6);
   box-shadow: 5px 5px 5px lightgray;
@@ -281,4 +284,49 @@ nav{
 .add:hover{
   background-color: lightgray;
   color:rgb(50,50,50);
+}
+
+
+
+/* --- tablet or medium size view 450px-800px --- */
+@media only screen and (max-width:900px) and (min-width:450px) {
+
+}
+
+/*--- phone view ---*/
+
+@media only screen and (max-width:450px){
+  .poster p{
+    animation: move 5s forwards;
+    padding:10px;
+    top: 10%;
+    width: 40%;
+    left: 60%;
+    text-align: center;
+    font-size: 0.8em;
+    color: lightgray;
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 5px 5px 5px lightgray;
+    border-radius: 20px;
+    border: outset 8px;
+    position: absolute;
+  }
+  .about p{
+    padding:10px;
+    bottom:1%;
+    width: 60%;
+    right:30%;
+    text-align: center;
+    font-size: 0.6em;
+    color: lightgray;
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 5px 5px 5px lightgray;
+    border-radius: 20px;
+    border: outset 8px;
+    position: absolute;
+  }
+}
+/*--- laptop view ---*/
+@media only screen and (min-width:900px){
+
 }
